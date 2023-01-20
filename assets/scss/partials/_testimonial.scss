@@ -1,0 +1,28 @@
+.testimonial {
+  height: 400px;
+}
+
+.about-us {
+  background: linear-gradient(
+    86deg,
+    rgba(255, 184, 1, 1) 10%,
+    rgba(255, 183, 1, 0.288) 100%
+  );
+  padding: 3em;
+  margin-bottom: 4em;
+  h4 {
+    @include colorAndFont(white, 2em);
+    font-weight: 700;
+  }
+}
+
+.testimonial-slide {
+  background-color: #1c164c8b;
+  h5 {
+    @include colorAndFont(white, 1.5em);
+    font-weight: 700;
+  }
+  p {
+    @include colorAndFont(white, 1.2em);
+  }
+}

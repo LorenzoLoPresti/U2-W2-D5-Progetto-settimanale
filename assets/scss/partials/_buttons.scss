@@ -20,4 +20,7 @@
 
 .buttons {
   @include btn(1em, $color-secondary);
+  @media screen and (min-width: 120px) {
+    @include btn(1.2em, $color-secondary);
+  }
 }
