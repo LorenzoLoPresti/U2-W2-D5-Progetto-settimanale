@@ -1,3 +1,59 @@
 @import "./partials/variables";
 @import "./partials/function";
 @import "./partials/navbar";
+@import "./partials/buttons";
+@import "./partials/partner";
+
+// HEADER
+header {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  height: 500px;
+  padding: 2em;
+  padding-top: 6em;
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: 576px) {
+    height: 600px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 500px;
+  }
+  .jumbotron p:first-child {
+    @include colorAndFont(white, 0.7em);
+
+    @media screen and (min-width: 576px) {
+      @include colorAndFont(white, 1em);
+    }
+  }
+  h1 {
+    @include colorAndFont($color-secondary, 1.8em);
+    margin-bottom: 1.5em;
+    @media screen and (min-width: 576px) {
+      @include colorAndFont($color-secondary, 2.5em);
+      margin-bottom: 1em;
+    }
+    @media screen and (min-width: 768px) {
+      @include colorAndFont($color-secondary, 3em);
+    }
+    font-weight: 700;
+  }
+  .disclaimer {
+    @include colorAndFont(white, 0.5em);
+    padding-top: 50px;
+    @media screen and (min-width: 440px) {
+      margin-top: 30px;
+      padding-top: 20px;
+    }
+  }
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+body > img {
+  position: fixed;
+  z-index: 0;
+}

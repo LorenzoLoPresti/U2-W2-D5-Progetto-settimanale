@@ -1,0 +1,47 @@
+// COLORI
+
+$color-primary: #1c164c;
+$color-secondary: #ffb801;
+$color-tertiary: #d1716a;
+
+// FONT
+
+$font-primary: "Red Hat Display", sans-serif;
+
+// MIXIN
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin display($property, $direction, $justify, $align) {
+  display: $property;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin colorAndFont($color, $size) {
+  color: $color;
+  font-family: $font-primary;
+  font-size: $size;
+}
+
+@mixin linkHover {
+  color: $color-tertiary;
+  text-decoration: underline $color-secondary;
+}
+
+@mixin listStyle {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@mixin btn($fs, $color) {
+  font-size: $fs;
+  padding: 16px;
+  color: white;
+  background-color: $color;
+}

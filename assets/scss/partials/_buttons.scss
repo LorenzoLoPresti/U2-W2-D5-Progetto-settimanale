@@ -1,0 +1,23 @@
+@mixin btn($fs, $color) {
+  font-size: $fs;
+  padding: 0.5em 2.5em;
+  color: white;
+  background-color: $color;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  @media screen and (max-width: 576px) {
+    padding: 0.3em 1.5em;
+  }
+  a {
+    @include colorAndFont($color-primary, 1em);
+    text-decoration: none;
+    @media screen and (max-width: 576px) {
+      @include colorAndFont($color-primary, 0.8em);
+    }
+  }
+}
+
+.buttons {
+  @include btn(1em, $color-secondary);
+}

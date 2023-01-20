@@ -1,0 +1,23 @@
+.partner {
+  @include display(flex, column, center, center);
+  @media screen and (max-width: 576px) {
+    margin-top: 30px;
+  }
+
+  h4 {
+    @include colorAndFont(white, 2em);
+    font-weight: 700;
+  }
+}
+
+.partner-list {
+  img {
+    width: 70%;
+    @media screen and (max-width: 576px) {
+      width: 120px;
+    }
+    @media screen and (max-width: 450px) {
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.navbar {
+  background-color: $color-primary;
+  .navbar-brand {
+    @include colorAndFont($color-secondary, $font-primary);
+    &:hover {
+      @include linkHover;
+    }
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+  .nav-list {
+    @include display(flex, row, center, center);
+    @include listStyle;
+    margin: 0;
+    li {
+      margin-right: 1em;
+      a {
+        @include colorAndFont($color-secondary, $font-primary);
+        text-decoration: none;
+
+        &:hover {
+          @include linkHover;
+        }
+      }
+    }
+  }
+}
