@@ -23,4 +23,11 @@
   @media screen and (min-width: 120px) {
     @include btn(1.2em, $color-secondary);
   }
+  &:hover {
+    background-color: #753d9a;
+    box-shadow: 0px 0px 5px 5px #753d9a;
+    a {
+      color: $color-secondary;
+    }
+  }
 }

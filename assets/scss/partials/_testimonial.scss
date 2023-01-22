@@ -1,5 +1,21 @@
 .testimonial {
-  height: 400px;
+  height: 220px;
+  transform: translate(-50px);
+  @media screen and (min-width: 576px) {
+    height: 300px;
+    transform: translate(-30px);
+  }
+  @media screen and (min-width: 768px) {
+    height: 330px;
+  }
+  @media screen and (min-width: 1100px) {
+    height: 350px;
+    transform: translate(0);
+  }
+  @media screen and (min-width: 1400px) {
+    height: 400px;
+    transform: translate(0);
+  }
 }
 
 .about-us {
@@ -8,21 +24,46 @@
     rgba(255, 183, 1, 0.762) 10%,
     rgba(255, 183, 1, 0.288) 100%
   );
-  padding: 3em;
+  padding: 1.3em;
   margin-bottom: 4em;
+  @media screen and (min-width: 576px) {
+    padding: 2em;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 2.3em;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 2.6em;
+  }
   h4 {
-    @include colorAndFont(white, 2em);
+    @include colorAndFont(white, 1em);
     font-weight: 700;
+    margin: 0;
+    @media screen and (min-width: 576px) {
+      @include colorAndFont(white, 1.3em);
+    }
+    @media screen and (min-width: 768px) {
+      @include colorAndFont(white, 1.6em);
+    }
+    @media screen and (min-width: 992px) {
+      @include colorAndFont(white, 2em);
+    }
   }
 }
 
 .testimonial-slide {
-  background-color: #1c164c8b;
+  background-color: #1c164c38;
   h5 {
-    @include colorAndFont(white, 1.5em);
+    @include colorAndFont(white, 1em);
     font-weight: 700;
+    @media screen and (min-width: 768px) {
+      @include colorAndFont(white, 1.2em);
+    }
   }
   p {
-    @include colorAndFont(white, 1.2em);
+    @include colorAndFont(white, 0.8em);
+    @media screen and (min-width: 768px) {
+      @include colorAndFont(white, 1em);
+    }
   }
 }

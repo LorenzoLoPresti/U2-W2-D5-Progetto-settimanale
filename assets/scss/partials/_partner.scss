@@ -1,8 +1,6 @@
 .partner {
   @include display(flex, column, center, center);
-  @media screen and (max-width: 576px) {
-    margin-top: 30px;
-  }
+  margin-top: 55px;
 
   h4 {
     @include colorAndFont(white, 1em);
@@ -18,15 +16,39 @@
 
 .partner-list {
   img {
-    width: 80px;
-    @media screen and (max-width: 576px) {
-      width: 90px;
+    width: 60px;
+    @media screen and (min-width: 576px) {
+      width: 70px;
     }
-    @media screen and (max-width: 450px) {
+
+    @media screen and (min-width: 768px) {
       width: 80px;
+      margin-bottom: 3em;
+    }
+  }
+  #partner-logo-2 {
+    width: 85px;
+    @media screen and (min-width: 576px) {
+      width: 100px;
+    }
+    @media screen and (min-width: 450px) {
+      width: 115px;
     }
     @media screen and (min-width: 768px) {
       margin-bottom: 3em;
     }
+  }
+  #partner-logo-4 {
+    transform: scale(1.3);
+    @media screen and (min-width: 768px) {
+      padding-top: 10px;
+    }
+  }
+  #partner-logo-5 {
+    transform: scale(1.2);
+  }
+  #partner-logo-6 {
+    transform: scale(1.3);
+    padding-top: 5px;
   }
 }
