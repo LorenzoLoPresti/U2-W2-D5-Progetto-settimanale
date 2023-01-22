@@ -14,6 +14,7 @@
     text-decoration: none;
     @media screen and (max-width: 576px) {
       @include colorAndFont($color-primary, 0.8em);
+      line-height: 2;
     }
   }
 }
